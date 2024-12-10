@@ -12,6 +12,7 @@ kotlin {
             kotlinOptions.jvmTarget = "1.8"
         }
     }
+/*
     js {
         nodejs()
     }
@@ -30,6 +31,7 @@ kotlin {
     watchosArm64 {}
     watchosSimulatorArm64 {}
     watchosX64 {}
+*/
 
     sourceSets {
         all {
@@ -56,6 +58,7 @@ kotlin {
                 implementation(kotlin("test-junit"))
             }
         }
+/*
         val jsMain by getting {
             dependencies {
                 implementation(libs.kotlin.node)
@@ -160,6 +163,7 @@ kotlin {
                 implementation(files("src/nativeInterop/openssl-watchos-simulator-arm64.klib"))
             }
         }
+*/
     }
 }
 

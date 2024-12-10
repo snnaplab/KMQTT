@@ -86,5 +86,7 @@ publishing {
 
 // Signing artifacts. Signing.* extra properties values will be used
 signing {
-    sign(publishing.publications)
+    if (System.getenv("SIGNING_KEY_ID") != null) {
+        sign(publishing.publications)
+    }
 }
